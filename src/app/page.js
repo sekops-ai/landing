@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { WhySekops } from "./components/why-sekops";
 import { Navbar } from "./shared/navbar";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full relative">
-      <section id="hero">
+    <main>
+      <section id="hero" className="min-h-screen w-full relative">
         <div id="bg-hero-circles" className="flex items-center justify-center">
           <Image
             src="/assets/circles-1x.svg"
@@ -32,7 +33,7 @@ export default function Home() {
         <Navbar></Navbar>
         <div
           id="hero-description"
-          className="z-40 absolute translate-x-[-50%] top-[25%] left-[50%] translate-y-[-50%] flex flex-col items-center"
+          className="z-50 absolute translate-x-[-50%] top-[25%] left-[50%] translate-y-[-50%] flex flex-col items-center"
         >
           <h1 className="mb-8 text-black-primary text-[70px] capitalize leading-[90px] text-center font-semibold">
             Application security for everyone
@@ -100,10 +101,11 @@ export default function Home() {
         >
           <div className="" id="bg-blue-ellipse">
             <Image
+              className="blur-[120px]"
               src="/assets/bg-hero-blue.svg"
               alt="bg-hero-blue"
               width={1200}
-              height={1200}
+              height={1199}
             />
           </div>
           <div className="absolute top-[150px] right-0 z-50">
@@ -124,6 +126,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <WhySekops></WhySekops>
     </main>
   );
 }
