@@ -19,3 +19,9 @@ body {
   color: var(--text-black);
   font-weight: 400;
 }
+
+@layer utilities {
+  .bg-features-gradient {
+    background-color: rgba(var(--blue-primary-bg), 0.05);
+  }
+}

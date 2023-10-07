@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Features } from "./components/features";
 import { WhySekops } from "./components/why-sekops";
 import { Navbar } from "./shared/navbar";
 
@@ -126,7 +127,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="absolute top-[650px] left-0">
+        <Image
+          src="/assets/wavy-bg-form.svg"
+          alt="wavy-form"
+          width={1800}
+          height={3450}
+        ></Image>
+      </div>
       <WhySekops></WhySekops>
+      <Features></Features>
     </main>
   );
 }

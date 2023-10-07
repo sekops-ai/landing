@@ -13,7 +13,7 @@ export const WhySekops = () => {
             src="/assets/why-sekops-circle.svg"
             alt="why-sekops"
             width={862}
-            height={790}
+            height={600}
           ></Image>
         </div>
         <Image
