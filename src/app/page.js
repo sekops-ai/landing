@@ -1,18 +1,22 @@
 import Image from "next/image";
+import { ContactUs } from "./components/contact-us";
 import { Features } from "./components/features";
+import { Footer } from "./components/footer";
+import { TechSupported } from "./components/tech-supported";
 import { WhySekops } from "./components/why-sekops";
 import { Navbar } from "./shared/navbar";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden relative">
       <section id="hero" className="min-h-screen w-full relative">
         <div id="bg-hero-circles" className="flex items-center justify-center">
           <Image
             src="/assets/circles-1x.svg"
             alt="ciircles-bg"
-            width={1500}
+            width={1440}
             height={1305}
+            priority={true}
           />
         </div>
         <div className="absolute left-0 top-0">
@@ -127,7 +131,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="absolute top-[650px] left-0">
+      <div className="absolute top-[650px] left-0 w-full overflow-hidden">
         <Image
           src="/assets/wavy-bg-form.svg"
           alt="wavy-form"
@@ -137,6 +141,9 @@ export default function Home() {
       </div>
       <WhySekops></WhySekops>
       <Features></Features>
+      <TechSupported></TechSupported>
+      <ContactUs></ContactUs>
+      <Footer></Footer>
     </main>
   );
 }

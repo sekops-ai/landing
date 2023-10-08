@@ -24,4 +24,7 @@ body {
   .bg-features-gradient {
     background-color: rgba(var(--blue-primary-bg), 0.05);
   }
+  .bg-cta-gradient {
+    background-color: rgba(var(--orange-secondary-bg), 0.1);
+  }
 }

@@ -5,9 +5,9 @@ export const Features = () => {
   return (
     <section
       id="features"
-      className="px-[130px]  justify-between  py-[100px]  relative w-full bg-features-gradient mb-[100px]"
+      className="px-[130px]  justify-between  py-[100px]  relative w-full bg-features-gradient"
     >
-      <h2 className="text-[70px] text-center mb-7 leading-none">Features</h2>
+      <h2 className="text-[50px] text-center mb-7 leading-none">Features</h2>
       <p className="text-center text-black-primary font-medium leading-7 mb-[100px]">
         SekOps performs all types of security scans and supports every
         programming language!
