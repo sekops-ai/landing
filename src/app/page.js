@@ -38,7 +38,7 @@ export default function Home() {
         <Navbar></Navbar>
         <div
           id="hero-description"
-          className="z-[100] absolute translate-x-[-50%] xl:top-[25%] base:top-[30%] top-[35%] left-[50%] translate-y-[-50%] flex flex-col items-center xl:w-auto w-11/12"
+          className="z-[100] absolute translate-x-[-50%] xl:top-[25%] base:top-[30%] sm:top-[35%] top-[32%] left-[50%] translate-y-[-50%] flex flex-col items-center xl:w-auto w-11/12"
         >
           <h1 className="base:mb-8 mb-6 text-black-primary 2xl:text-[70px] xl:text-[60px] base:text-[55px] text-[40px] capitalize base:leading-[90px] leading-[60px] text-center font-semibold">
             Application security for everyone
@@ -82,7 +82,7 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="angular" className="absolute top-[367px] right-[290px]">
+          <div id="angular" className="absolute top-[367px] right-[280px]">
             <Image
               src="/assets/angular.svg"
               alt="angular"
@@ -90,7 +90,7 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="spring" className="absolute top-[569px] right-[192px]">
+          <div id="spring" className="absolute top-[569px] right-[100px]">
             <Image
               src="/assets/spring.svg"
               alt="spring"
@@ -105,7 +105,7 @@ export default function Home() {
 
         <div
           id="demo-screens"
-          className="absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[400px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto w-screen  max-w-[950px]"
+          className="absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[430px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto w-screen  max-w-[950px]"
         >
           <div className="" id="bg-blue-ellipse">
             <Image
