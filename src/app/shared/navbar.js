@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export const Navbar = () => {
   return (
-    <nav className="px-[100px] pt-[34px] flex items-center w-full absolute z-[100] top-0 left-0">
+    <nav className="px-[100px] pt-[34px] flex  items-center w-full absolute z-[100] top-0 left-0">
       <div className="flex-1">
         <Image src="/assets/logo.svg" alt="logo" width={145} height={36} />
       </div>
-      <div className="flex-[0_0_550px] justify-center flex text-[1rem]">
+      <div className="flex-[0_0_550px] justify-center  text-[1rem] min-[1024px]:flex hidden">
         <ul className="flex items-center">
           <li className="pr-8">
             <a

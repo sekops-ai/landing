@@ -14,7 +14,21 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "500px",
+      md: "640px",
+      base: "800px",
+      lg: "1142px",
+      xl: "1280px",
+      "2xl": "1580px",
+    },
     extend: {
+      gridTemplateColumns: {
+        logos: "repeat(auto-fit, minmax(50px, 1fr))",
+        "why-sekops": "repeat(auto-fit, minmax(500px, 1fr))",
+        "why-sekops-sm": "repeat(auto-fit, minmax(300px, 1fr))",
+      },
+
       backgroundColor: {
         blue: {
           primary: withOpacity("--blue-primary-bg"),

@@ -163,17 +163,17 @@ export const TechSupported = () => {
   return (
     <section
       id="tech-supported"
-      className="relative z-50 px-[130px]  justify-center flex flex-col items-center  pt-[100px] pb-[145px] w-full"
+      className="relative z-50 lg:px-[130px] px-6  justify-center flex flex-col items-center  pt-[100px] pb-[145px] w-full"
     >
       <h2 className="text-[50px] text-center mb-7 leading-none">
         Scan the Whole stack
       </h2>
-      <p className="text-black-primary text-[18px] font-normal text-center max-w-[55%] flex justify-center mb-[60px]">
+      <p className="text-black-primary text-[18px] font-normal text-center md:max-w-[55%] flex justify-center mb-[60px]">
         SekOps supports every stack and technology, providing thorough coverage
         and flexibility for your projects
       </p>
 
-      <ul className="flex justify-center items-center flex-wrap gap-2 max-w-[800px]">
+      <ul className="lg:flex justify-center items-center flex-wrap gap-2 w-full lg:max-w-[800px] grid  grid-cols-logos grid-rows-logos">
         {techLogos.map((logo) => {
           return (
             <li key={logo.id} className="flex-1 min-w-[50px]">
