@@ -40,7 +40,7 @@ export default function Home() {
           id="hero-description"
           className="z-[100] absolute translate-x-[-50%] xl:top-[25%] base:top-[30%] top-[35%] left-[50%] translate-y-[-50%] flex flex-col items-center xl:w-auto w-11/12"
         >
-          <h1 className="base:mb-8 mb-6 text-black-primary 2xl:text-[70px] xl:text-[60px] text-[55px] capitalize base:leading-[90px] leading-[60px] text-center font-semibold">
+          <h1 className="base:mb-8 mb-6 text-black-primary 2xl:text-[70px] xl:text-[60px] base:text-[55px] text-[40px] capitalize base:leading-[90px] leading-[60px] text-center font-semibold">
             Application security for everyone
           </h1>
           <p className="text-black-primary text-[18px] font-normal text-center sm:max-w-[75%] max-w-full flex justify-center">
@@ -105,7 +105,7 @@ export default function Home() {
 
         <div
           id="demo-screens"
-          className="absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[450px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto w-screen  max-w-[950px]"
+          className="absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[400px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto w-screen  max-w-[950px]"
         >
           <div className="" id="bg-blue-ellipse">
             <Image
@@ -137,7 +137,6 @@ export default function Home() {
                 quality={75}
                 objectFit={true}
               />
-              {/* sizes="(max-width: 768px) 33vw" */}
             </div>
           </div>
         </div>

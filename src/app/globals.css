@@ -28,3 +28,20 @@ body {
     background-color: rgba(var(--orange-secondary-bg), 0.1);
   }
 }
+
+.navbar-mobile-wrapper {
+  display: block;
+  visibility: visible;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0 24px;
+  background: #fff;
+  z-index: 2000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+}
