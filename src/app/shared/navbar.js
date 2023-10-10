@@ -1,10 +1,34 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+// import SmoothScroll from "smooth-scroll";
 
 export const Navbar = () => {
   const [isMobilNavbarHidden, toggleMobileNavbar] = useState(false);
+
+  const makeLinksSmooth = () => {
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", smoothScroll);
+    });
+  };
+
+  const smoothScroll = (e) => {
+    e.preventDefault();
+    const targetId = e.target.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+  };
+
+  useEffect(() => {
+    makeLinksSmooth();
+  }, []);
 
   return (
     <div>
@@ -19,12 +43,9 @@ export const Navbar = () => {
         <div className="flex-[0_0_550px] justify-center  text-[1rem] lg:block hidden">
           <ul className="flex items-center">
             <li className="pr-8">
-              <a
-                href="/"
-                className="hover:text-blue-primary transition-all duration-150 ease-in-out"
-              >
+              <div className="hover:text-blue-primary transition-all duration-150 ease-in-out cursor-pointer">
                 Home
-              </a>
+              </div>
             </li>
             <li className="pr-8">
               <a
@@ -36,7 +57,7 @@ export const Navbar = () => {
             </li>
             <li className="pr-8">
               <a
-                href="#capabilities"
+                href="#features"
                 className="hover:text-blue-primary transition-all duration-150 ease-in-out"
               >
                 Capabilities

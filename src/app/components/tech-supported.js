@@ -162,7 +162,7 @@ export const TechSupported = () => {
   ];
   return (
     <section
-      id="tech-supported"
+      id="techs"
       className="relative z-50 lg:px-[130px] px-6  justify-center flex flex-col items-center  pt-[100px] pb-[145px] w-full"
     >
       <h2 className="text-[50px] text-center mb-7 leading-none">

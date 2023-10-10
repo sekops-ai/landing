@@ -45,3 +45,10 @@ body {
   -webkit-overflow-scrolling: touch;
   top: 0;
 }
+/* CSS to apply easing effect */
+html {
+  scroll-behavior: smooth;
+
+  /* Custom cubic-bezier easing */
+  scroll-behavior: cubic-bezier(0.42, 0, 0.58, 1);
+}
