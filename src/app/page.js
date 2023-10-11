@@ -8,8 +8,8 @@ import { Navbar } from "./shared/navbar";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden relative">
-      <section id="hero" className="min-h-screen w-full relative">
+    <main className="overflow-hidden relative ">
+      <section id="hero" className="min-h-screen w-full relative ">
         <div id="bg-hero-circles" className="flex items-center justify-center">
           <Image
             src="/assets/circles-1x.svg"
@@ -141,13 +141,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="absolute xl:top-[650px] bottom-[-200px] left-0 w-full overflow-hidden">
-        <Image
-          src="/assets/wavy-bg-form.svg"
-          alt="wavy-form"
-          width={1800}
-          height={3450}
-        ></Image>
+      <div className=" absolute xl:bottom-0 bottom-[-200px] left-0 w-full overflow-hidden">
+        <div className="relative w-[1440px] h-[2000px]">
+          <Image
+            src="/assets/wavy-bg-form.svg"
+            alt="wavy-form"
+            fill
+            quality={75}
+          ></Image>
+        </div>
       </div>
       <WhySekops></WhySekops>
       <Features></Features>

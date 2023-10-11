@@ -18,6 +18,13 @@ body {
   font-size: 18px;
   color: var(--text-black);
   font-weight: 400;
+  transform: translate3d(0, 0, 1px);
+  backface-visibility: hidden;
+}
+
+#main-div {
+  transform: translate3d(0, 0, 1px);
+  backface-visibility: hidden;
 }
 
 @layer utilities {
@@ -51,4 +58,180 @@ html {
 
   /* Custom cubic-bezier easing */
   scroll-behavior: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  height: 100vh;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  /* background-color: #fefefe; */
+  margin: auto;
+  padding: 0;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 80%;
+  overflow: hidden; /* Enable scroll if needed */
+
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+input:focus-visible,
+input:focus {
+  background-color: unset transparent;
+}
+
+@media only screen and (max-width: 414px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::scrollbar-thumb {
+  background-color: rgba(98, 93, 93, 0.607);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(98, 93, 93, 0.607);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(98, 93, 93, 0.607);
+}
+body::scrollbar-thumb:hover {
+  background-color: rgba(98, 93, 93, 0.607);
+}
+.dot-flashing {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(107, 171, 187);
+  color: rgba(107, 171, 187);
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(107, 171, 187);
+  color: rgba(107, 171, 187);
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(107, 171, 187);
+  color: rgba(107, 171, 187);
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: rgba(107, 171, 187);
+  }
+  50%,
+  100% {
+    background-color: rgba(14, 25, 39);
+  }
+}
+button[disabled] {
+  background-color: rgba(var(--blue-primary-bg), 0.5);
+  border: unset;
+  cursor: unset;
+}
+.disabled-btn span {
+  color: rgba(99, 109, 121) !important;
 }

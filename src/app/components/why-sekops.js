@@ -5,7 +5,7 @@ export const WhySekops = () => {
   return (
     <section
       id="why-sekops"
-      className="mt-[140px] pb-10 relative z-50 base:px-10 px-6  md:px-[70px] xl:flex justify-between   pt-[52px] grid md:grid-cols-why-sekops grid-cols-why-sekops-sm"
+      className="max-[1142]:mt-[140px] pb-10 relative z-50 base:px-10 px-6  md:px-[70px] xl:flex justify-between   pt-[52px] grid md:grid-cols-why-sekops grid-cols-why-sekops-sm"
     >
       <div id="why-sekops-bg" className="hidden lg:block lg:relative  flex-1">
         <div className="absolute z-10 top-0 left-0">
@@ -99,7 +99,7 @@ export const WhySekops = () => {
               projects, ensuring you're always a step ahead in security.
             </p>
           </li>
-          <li className="mb-3 ">
+          <li className="mb-3">
             <h4 className="text-black-primary sm:text-[18px] text-base font-semibold capitalize leading-7 flex items-center">
               <Image
                 src="/assets/icons/heart.svg"
