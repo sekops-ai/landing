@@ -18,13 +18,6 @@ body {
   font-size: 18px;
   color: var(--text-black);
   font-weight: 400;
-  transform: translate3d(0, 0, 1px);
-  backface-visibility: hidden;
-}
-
-#main-div {
-  transform: translate3d(0, 0, 1px);
-  backface-visibility: hidden;
 }
 
 @layer utilities {
@@ -234,4 +227,23 @@ button[disabled] {
 }
 .disabled-btn span {
   color: rgba(99, 109, 121) !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .alert-box,
+  .head-sqli-wrapper {
+    left: 50%;
+    transform: translateX(-50%) !important;
+  }
+  .head-sqli-box {
+    width: 350px !important;
+    height: 350px !important;
+  }
+  #why-sekops {
+    margin-top: 140px;
+  }
+}
+
+.blured {
+  filter: blur(100);
 }

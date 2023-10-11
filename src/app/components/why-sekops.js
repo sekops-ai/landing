@@ -3,11 +3,15 @@ import Image from "next/image";
 
 export const WhySekops = () => {
   return (
+    // max-[1142px]:mt-[140px]
     <section
       id="why-sekops"
-      className="max-[1142]:mt-[140px] pb-10 relative z-50 base:px-10 px-6  md:px-[70px] xl:flex justify-between   pt-[52px] grid md:grid-cols-why-sekops grid-cols-why-sekops-sm"
+      className=" pb-10 relative z-50 base:px-10 px-6  md:px-[70px] xl:flex justify-between   pt-[52px] xl:pt-0 grid md:grid-cols-why-sekops grid-cols-why-sekops-sm"
     >
-      <div id="why-sekops-bg" className="hidden lg:block lg:relative  flex-1">
+      <div
+        id="why-sekops-bg"
+        className="hidden lg:block lg:relative xl:top-[-80px] flex-1"
+      >
         <div className="absolute z-10 top-0 left-0">
           <Image
             src="/assets/why-sekops-circle.svg"
@@ -46,7 +50,7 @@ export const WhySekops = () => {
         ></Image>
       </div>
 
-      <div className="flex flex-col justify-center flex-1 lg:max-w-none sm:w-full sm:max-w-none max-w-[500px]">
+      <div className="flex flex-col justify-center xl:justify-start flex-1 lg:max-w-none sm:w-full sm:max-w-none max-w-[500px]">
         <h2 className="base:text-[50px] text-[33px] font-medium leading-[48px] capitalize mb-8 text-black-primary">
           Why Choose SekOps?
         </h2>

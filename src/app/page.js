@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { ContactUs } from "./components/contact-us";
 import { Features } from "./components/features";
-import { Footer } from "./shared/footer";
 import { TechSupported } from "./components/tech-supported";
 import { WhySekops } from "./components/why-sekops";
-import { Navbar } from "./shared/navbar";
 
 export default function Home() {
   return (
@@ -35,7 +33,7 @@ export default function Home() {
             height={1126}
           />
         </div>
-        <Navbar></Navbar>
+
         <div
           id="hero-description"
           className="z-[100] absolute translate-x-[-50%] xl:top-[25%] base:top-[30%] sm:top-[35%] top-[32%] left-[50%] translate-y-[-50%] flex flex-col items-center xl:w-auto w-11/12"
@@ -105,57 +103,80 @@ export default function Home() {
 
         <div
           id="demo-screens"
-          className="absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[430px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto w-screen  max-w-[950px]"
+          className=" max-w-[800px] max-h-[800px] absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[430px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto "
         >
-          <div className="" id="bg-blue-ellipse">
-            <Image
-              className="blur-[120px]"
-              src="/assets/bg-hero-blue.svg"
-              alt="bg-hero-blue"
-              width={1200}
-              height={1199}
-            />
+          <div id="bg-blue-ellipse" className="relative top-0 left-[-200px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1200"
+              height="1199"
+              viewBox="0 0 1200 1199"
+              fill="none"
+            >
+              <g opacity="0.5" filter="url(#filter0_f_1_7246)">
+                <path
+                  d="M200 599.254C200 378.752 379.498 200 600 200C820.502 200 1000 378.752 1000 599.254C1000 819.755 820.502 998.507 600 998.507C379.498 998.507 200 819.755 200 599.254Z"
+                  fill="#526ED3"
+                  fillOpacity="0.5"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_1_7246"
+                  x="0"
+                  y="0"
+                  width="1200"
+                  height="1198.51"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="100"
+                    result="effect1_foregroundBlur_1_7246"
+                  />
+                </filter>
+              </defs>
+            </svg>
           </div>
-          <div className="absolute sm:top-[150px] top-0  lg:right-[-50px] sm:right-20 max-[500px]:left-[50%] max-[500px]:translate-x-[-50%] z-50">
+          <div className="absolute sm:top-[150px] top-0  lg:right-[-50px] sm:right-20  z-50 alert-box">
             <div className="relative  md:w-[400px] md:h-[225px] max-w-[400px] w-[300px] h-[200px]">
               <Image
                 src="/assets/alerts.svg"
                 alt="alerts"
                 fill
                 priority
-                objectFit={true}
+                style={{
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
-          <div className="absolute sm:top-[230px] top-[150px] sm:base:left-0 sm:left-[-50px] max-[500px]:left-[50%] max-[500px]:translate-x-[-50%] z-20 px-8">
-            <div className="relative base:w-[672px] md:w-[500px] md:h-[448px] max-w-[672px] sm:w-[400px] sm:h-[400px] max-[500px]:w-[350px] max-[500px]:h-[350px]">
+          <div className="absolute sm:top-[230px] top-[150px] base:left-0 sm:left-[-50px]  z-20 px-8 head-sqli-wrapper">
+            <div className="relative base:w-[672px] md:w-[500px] md:h-[448px] max-w-[672px] sm:w-[400px] sm:h-[400px] head-sqli-box">
               <Image
                 src="/assets/head-sqli.svg"
                 alt="head-sqli"
                 fill
                 priority
-                quality={75}
-                objectFit={true}
+                style={{
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
         </div>
       </section>
-      <div className=" absolute xl:bottom-0 bottom-[-200px] left-0 w-full overflow-hidden">
-        <div className="relative w-[1440px] h-[2000px]">
-          <Image
-            src="/assets/wavy-bg-form.svg"
-            alt="wavy-form"
-            fill
-            quality={75}
-          ></Image>
-        </div>
-      </div>
       <WhySekops></WhySekops>
       <Features></Features>
       <TechSupported></TechSupported>
       <ContactUs></ContactUs>
-      <Footer></Footer>
     </main>
   );
 }
