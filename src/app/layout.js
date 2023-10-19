@@ -38,7 +38,7 @@ export async function generateMetadata() {
       shortcut: "/favicon.ico",
     },
     robots: {
-      index: false,
+      index: true,
       follow: true,
     },
   };
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
           pauseOnFocusLoss={false}
           closeOnClick
           pauseOnHover
-          theme="dark"
+          theme="light"
         />
       </body>
     </html>
