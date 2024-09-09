@@ -36,27 +36,54 @@ export default function Home() {
 
         <div
           id="hero-description"
-          className="z-[100] absolute translate-x-[-50%] xl:top-[25%] base:top-[30%] sm:top-[35%] top-[32%] left-[50%] translate-y-[-50%] flex flex-col items-center xl:w-auto w-11/12"
+          className="z-[100] absolute translate-x-[-50%] xl:top-[25%] base:top-[50%] sm:top-[55%] top-[52%] left-[50%] translate-y-[-20%] flex flex-col items-center xl:w-auto w-11/12"
         >
-          <h1 className="base:mb-8 mb-6 text-black-primary 2xl:text-[70px] xl:text-[60px] base:text-[55px] text-[40px] capitalize base:leading-[90px] leading-[60px] text-center font-semibold">
+          <h1 className="font-manrope base:mb-8 mb-6 text-black-primary 2xl:text-[70px] xl:text-[70px] base:text-[55px] text-[40px] capitalize base:leading-[80px] leading-[60px] text-center font-semibold">
             Application security for everyone
           </h1>
-          <p className="text-black-primary text-[18px] font-normal text-center sm:max-w-[75%] max-w-full flex justify-center">
+          <p className="text-black-primary mb-20 text-[18px] font-normal text-center sm:max-w-[75%] max-w-full flex justify-center">
             Empowering businesses of all sizes with affordable,
             easy-to-integrate, and high-impact Application Security solution
           </p>
+          <div className="mb-12  flex items-center gap-20">
+            <Image
+              src="/assets/icons/secdojo.svg"
+              alt="secdojo"
+              width={193}
+              height={42}
+            />
+            <Image
+              src="/assets/icons/sekera.svg"
+              alt="sekera"
+              width={149}
+              height={42}
+            />
+            <Image
+              src="/assets/icons/cdm.svg"
+              alt="cdm"
+              width={111}
+              height={32}
+            />
+            <Image
+              src="/assets/icons/afma.svg"
+              alt="afma"
+              width={93}
+              height={40}
+            />
+          </div>
         </div>
+
         <div
           id="languages-logos"
           className="xl:block hidden z-50 top-0 absolute w-full h-full"
         >
-          <div id="k-8" className="absolute top-[212px] left-[163px]">
+          <div id="k-8" className="absolute top-[112px] left-[100px]">
             <Image src="/assets/k8.svg" alt="k-8" width={191} height={191} />
           </div>
-          <div id="php" className="absolute top-[154px] right-[171px]">
+          <div id="php" className="absolute top-[112px] right-[100px]">
             <Image src="/assets/php.svg" alt="php" width={191} height={191} />
           </div>
-          <div id="python" className="absolute top-[410px] left-[89px]">
+          <div id="python" className="absolute top-[300px] left-[10px]">
             <Image
               src="/assets/python.svg"
               alt="php"
@@ -64,7 +91,7 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="react" className="absolute top-[459px] left-[275px]">
+          <div id="react" className="absolute top-[410px] left-[100px]">
             <Image
               src="/assets/react.svg"
               alt="react"
@@ -72,7 +99,7 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="gitlab" className="absolute top-[269px] right-[80px]">
+          <div id="gitlab" className="absolute top-[300px] right-[10px]">
             <Image
               src="/assets/gitlab.svg"
               alt="gitlab"
@@ -80,7 +107,7 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="angular" className="absolute top-[367px] right-[280px]">
+          <div id="angular" className="absolute top-[310px] right-[160px]">
             <Image
               src="/assets/angular.svg"
               alt="angular"
@@ -88,7 +115,7 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="spring" className="absolute top-[569px] right-[100px]">
+          <div id="spring" className="absolute top-[490px] right-[20px]">
             <Image
               src="/assets/spring.svg"
               alt="spring"
@@ -96,14 +123,14 @@ export default function Home() {
               height={191}
             />
           </div>
-          <div id="js" className="absolute top-[636px] left-[131px]">
+          <div id="js" className="absolute top-[530px] left-[40px]">
             <Image src="/assets/js.svg" alt="js" width={191} height={191} />
           </div>
         </div>
 
         <div
           id="demo-screens"
-          className=" max-w-[800px] max-h-[800px] absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[430px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto "
+          className="mt-[10rem] max-w-[800px] max-h-[800px] absolute base:bottom-0 base:top-[350px] sm:top-[300px] top-[430px]  sm:left-10 lg:translate-x-[-50%] lg:left-[50%] xl:w-auto "
         >
           <div id="bg-blue-ellipse" className="relative top-0 left-[-200px]">
             <svg

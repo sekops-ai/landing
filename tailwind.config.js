@@ -28,6 +28,9 @@ module.exports = {
         "why-sekops": "repeat(auto-fit, minmax(500px, 1fr))",
         "why-sekops-sm": "repeat(auto-fit, minmax(300px, 1fr))",
       },
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+      },
 
       backgroundColor: {
         blue: {
